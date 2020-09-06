@@ -1,0 +1,39 @@
+<Html>  
+<head>   
+<title>  
+Palindrome Page  
+</title>
+<script type="text/javascript">
+function palindrome() {
+    let i = 0, c=0;
+    str = document.getElementById("fname");
+    let j = str.length - 1;
+    while(i < j) {
+        if(str[i] == str[j]) {
+            i++; 
+            j--;
+            c++;
+        }
+        }
+        if(c==(str.length))
+        {
+            alert( "true");
+    }
+    else
+    {
+    alert( "false");
+    }
+}
+</script>  
+</head>  
+<body bgcolor="Lightyellow">  
+<br>  
+<br>  
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname" pattern="[A-Z or a-z]"><br>
+<br>
+<br>
+<button onclick="palindrome('fname')" > Check</button></br></br>
+</label>
+
+</html>
